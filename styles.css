@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e9ecef; /* Light gray background for the entire page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.container {
+    max-width: 800px; /* Limit width for better readability */
+    width: 100%;
+}
+
+header {
+    background-color: #007BFF; /* Blue header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #343a40; /* Dark gray for headings */
+    margin-top: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007BFF; /* Change border color on focus */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f8f9fa; /* Light gray for list items */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #007BFF; /* Blue left border */
+    transition: background-color 0.3s;
+}
+
+ul li:hover {
+    background-color: #e2e6ea; /* Darker gray on hover */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #6c757d; /* Muted gray */
+}
+
+@media (max-width: 600px) {
+    header, section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    select {
+        width: 100%;
+    }
+}

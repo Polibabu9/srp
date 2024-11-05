@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Agriculture in Rural Areas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sustainable Agriculture in Rural Areas</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Select Agricultural Season</h2>
+                <select id="seasonSelect" onchange="updateSoilOptions()">
+                    <option value="">--Select Season--</option>
+                    <option value="zaid">Zaid</option>
+                    <option value="kharif">Kharif</option>
+                    <option value="rabi">Rabi</option>
+                </select>
+            </section>
+            
+            <section>
+                <h2>Select Soil Type</h2>
+                <select id="soilSelect" onchange="showCropOptions()">
+                    <option value="">--Select Soil Type--</option>
+                </select>
+            </section>
+            
+            <section id="cropSection" style="display: none;">
+                <h2>Suitable Crops</h2>
+                <ul id="cropList"></ul>
+                <h3>Mixed Crops Information</h3>
+                <p id="mixedCrops"></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Sustainable Agriculture Initiative</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
